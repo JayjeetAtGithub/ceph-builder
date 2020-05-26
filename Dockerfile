@@ -7,9 +7,9 @@ ARG EXTRA_PKGS=""
 ADD . /
 
 RUN yum install -y git wget && \
+    ./install-preq.sh && \
     git clone --branch $GIT_REF --depth 1 $GIT_URL ceph && \
     cd ceph && \
-    ./install-preq.sh && \
     ./install-deps.sh && \
     sh -c 'if [ -n "$EXTRA_PKGS" ]; then apt-get install -y "$EXTRA_PKGS"; fi' && \
     yum clean all
