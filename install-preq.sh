@@ -2,8 +2,9 @@
 set -ex
 
 yum update -y
-yum install -y centos-release-scl scl-utils devtoolset-8 epel-release
-yum install -y python-pip python-devel
+yum install -y centos-release-scl scl-utils epel-release
+yum install -y python-pip python-devel 
+yum install -y devtoolset-8
 pip install --upgrade pip
 pip install virtualenv
 scl enable devtoolset-8 bash
