@@ -6,8 +6,7 @@ ARG EXTRA_PKGS=""
 
 ADD . /
 
-RUN yum install -y git wget gnupg2 ccache && \
-    ./install-preq.sh && \
+RUN ./install-preq.sh && \
     git clone --branch $GIT_REF --depth 1 $GIT_URL ceph && \
     cd ceph && \
     ./install-deps.sh && \

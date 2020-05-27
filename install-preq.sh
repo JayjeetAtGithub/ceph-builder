@@ -2,7 +2,7 @@
 set -ex
 
 # yum update -y
-yum install -y centos-release-scl scl-utils epel-release
+yum install -y centos-release-scl scl-utils epel-release git wget gnupg2 ccache
 yum install -y python-pip
 yum install -y devtoolset-8
 # pip install --upgrade pip
