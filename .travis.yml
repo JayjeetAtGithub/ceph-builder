@@ -7,7 +7,7 @@ env:
 - OS_VERSION=bionic GIT_URL=https://github.com/ceph/ceph            GIT_REF=octopus          IMG="popperized/ceph-builder:octopus-bionic"
 - OS_VERSION=bionic GIT_URL=https://github.com/ceph/ceph            GIT_REF=nautilus         IMG="popperized/ceph-builder:nautilus-bionic"
 - OS_VERSION=bionic GIT_URL=https://github.com/ceph/ceph            GIT_REF=mimic            IMG="popperized/ceph-builder:mimic-bionic"
-- OS_VERSION=bionic GIT_URL=https://github.com/uccross/skyhook-ceph GIT_REF=skyhook-luminous IMG="popperized/ceph-builder:skyhook-bionic"
+- OS_VERSION=bionic GIT_URL=https://github.com/uccross/skyhookdm-ceph GIT_REF=skyhook-luminous IMG="popperized/ceph-builder:skyhook-bionic"
 install:
 - git clone https://github.com/systemslab/popper /tmp/popper
 - export PYTHONUNBUFFERED=1
