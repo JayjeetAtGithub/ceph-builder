@@ -1,7 +1,7 @@
 FROM centos:7.8.2003
 
-ARG GIT_URL="https://github.com/uccross/skyhookdm-ceph"
-ARG GIT_REF="skyhook-luminous"
+ARG GIT_URL="https://github.com/aditigupta17/skyhookdm-ceph"
+ARG GIT_REF="nautil"
 ARG EXTRA_PKGS=""
 
 ADD . /

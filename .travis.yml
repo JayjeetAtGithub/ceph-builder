@@ -3,8 +3,6 @@ dist: xenial
 language: python
 python: 3.7
 services: docker
-env:
-- OS_VERSION=7.8.2003 GIT_URL=https://github.com/uccross/skyhookdm-ceph GIT_REF=skyhook-luminous IMG="jcnitdgp25/ceph-builder:skyhook-centos"
 install:
 - git clone --branch parser-bug-fix https://github.com/systemslab/popper /tmp/popper
 - export PYTHONUNBUFFERED=1
