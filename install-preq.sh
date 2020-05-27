@@ -8,5 +8,6 @@ yum install -y devtoolset-8 devtoolset-7
 yum install -y cmake3
 pip install --upgrade pip
 pip install --upgrade virtualenv
+ln -s /usr/bin/cmake3 /usr/bin/cmake
 scl enable devtoolset-8 bash
 scl enable devtoolset-7 bash
