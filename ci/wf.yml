@@ -9,7 +9,7 @@ steps:
   ]
 
 - uses: docker://docker:19.03.3
-  runs: /bin/sh
+  runs: ['/bin/sh']
   secrets: [DOCKER_USERNAME, DOCKER_PASSWORD]
   args:
   - -c
