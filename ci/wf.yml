@@ -1,11 +1,8 @@
 steps:
 - uses: docker://docker:19.03.3
-  args: ['build', 
-         '--build-arg', 'GIT_URL=https://github.com/uccross/skyhookdm-ceph',
-         '--build-arg', 'GIT_REF=skyhook-luminous',
-         '-t', 'jcnitdgp25/ceph-builder:skyhook-luminous-centos',
-         '.'
-        ]
+  args: ['build',
+         '-t', 'jcnitdgp25/ceph-builder:skyhook-nautilus-centos',
+         '.']
 
 - uses: docker://docker:19.03.3
   runs: ['/bin/sh']
@@ -14,4 +11,4 @@ steps:
   - -c
   - |
     docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-    docker push jcnitdgp25/ceph-builder:skyhook-luminous-centos
+    docker push jcnitdgp25/ceph-builder:skyhook-nautilus-centos
