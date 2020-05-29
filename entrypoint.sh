@@ -1,6 +1,14 @@
 #!/bin/bash
 set -e
 
+yum install -y devtoolset-8
+
+scl enable devtoolset-8 bash
+
+gcc -v
+
+g++ -v
+
 if [ -z "$CEPH_SRC_DIR" ]; then
   echo "No CEPH_SRC_DIR variable defined, using current directory"
   CEPH_SRC_DIR="./"
